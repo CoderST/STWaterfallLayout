@@ -11,6 +11,7 @@ s.name         = "STWaterfallLayout"
 s.version      = "0.0.1"
 s.summary      = "swift3.0瀑布流."
 s.ios.deployment_target = '9.0'
+s.osx.deployment_target = '10.11'
 s.homepage     = "https://github.com/CoderST/STWaterfallLayout"
 # 开源许可证
 s.license      = { :type => 'MIT', :file => 'LICENSE' }
