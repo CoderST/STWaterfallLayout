@@ -13,7 +13,11 @@
 		0FB8D3CE1DF67E0600FAB630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB8D3CD1DF67E0600FAB630 /* Assets.xcassets */; };
 		0FB8D3D11DF67E0600FAB630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB8D3CF1DF67E0600FAB630 /* LaunchScreen.storyboard */; };
 		0FB8D3DC1DF67E0600FAB630 /* STWaterfallLayoutExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8D3DB1DF67E0600FAB630 /* STWaterfallLayoutExampleUITests.swift */; };
-		0FB8D3E71DF67EC300FAB630 /* STWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8D3E61DF67EC300FAB630 /* STWaterfallLayout.swift */; };
+		0FB8D3EA1DF6853A00FAB630 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8D3E81DF6853A00FAB630 /* TestCell.swift */; };
+		0FB8D3EB1DF6853A00FAB630 /* TestItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8D3E91DF6853A00FAB630 /* TestItem.swift */; };
+		0FB8D3EE1DF6854B00FAB630 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FB8D3EC1DF6854B00FAB630 /* 1.plist */; };
+		0FB8D3EF1DF6854B00FAB630 /* QQ.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FB8D3ED1DF6854B00FAB630 /* QQ.png */; };
+		D053D9F8D3AC5BF48A219CBC /* Pods_STWaterfallLayoutExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF74649D83B11D3FB916811 /* Pods_STWaterfallLayoutExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07307417E8584C18DD20A2B6 /* Pods-STWaterfallLayoutExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STWaterfallLayoutExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STWaterfallLayoutExample/Pods-STWaterfallLayoutExample.debug.xcconfig"; sourceTree = "<group>"; };
 		0FB8D3C31DF67E0600FAB630 /* STWaterfallLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STWaterfallLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB8D3C61DF67E0600FAB630 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FB8D3C81DF67E0600FAB630 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +42,12 @@
 		0FB8D3D71DF67E0600FAB630 /* STWaterfallLayoutExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STWaterfallLayoutExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB8D3DB1DF67E0600FAB630 /* STWaterfallLayoutExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STWaterfallLayoutExampleUITests.swift; sourceTree = "<group>"; };
 		0FB8D3DD1DF67E0600FAB630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FB8D3E61DF67EC300FAB630 /* STWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STWaterfallLayout.swift; sourceTree = "<group>"; };
+		0FB8D3E81DF6853A00FAB630 /* TestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		0FB8D3E91DF6853A00FAB630 /* TestItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestItem.swift; sourceTree = "<group>"; };
+		0FB8D3EC1DF6854B00FAB630 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		0FB8D3ED1DF6854B00FAB630 /* QQ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QQ.png; sourceTree = "<group>"; };
+		807684D823DDE78563E16EBD /* Pods-STWaterfallLayoutExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STWaterfallLayoutExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-STWaterfallLayoutExample/Pods-STWaterfallLayoutExample.release.xcconfig"; sourceTree = "<group>"; };
+		ADF74649D83B11D3FB916811 /* Pods_STWaterfallLayoutExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STWaterfallLayoutExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D053D9F8D3AC5BF48A219CBC /* Pods_STWaterfallLayoutExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +75,8 @@
 				0FB8D3C51DF67E0600FAB630 /* STWaterfallLayoutExample */,
 				0FB8D3DA1DF67E0600FAB630 /* STWaterfallLayoutExampleUITests */,
 				0FB8D3C41DF67E0600FAB630 /* Products */,
+				19A45DD7BA29ABBD532D4720 /* Pods */,
+				5B5B6787788BA9BE881EB9DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +92,10 @@
 		0FB8D3C51DF67E0600FAB630 /* STWaterfallLayoutExample */ = {
 			isa = PBXGroup;
 			children = (
-				0FB8D3E61DF67EC300FAB630 /* STWaterfallLayout.swift */,
+				0FB8D3EC1DF6854B00FAB630 /* 1.plist */,
+				0FB8D3ED1DF6854B00FAB630 /* QQ.png */,
+				0FB8D3E81DF6853A00FAB630 /* TestCell.swift */,
+				0FB8D3E91DF6853A00FAB630 /* TestItem.swift */,
 				0FB8D3C61DF67E0600FAB630 /* AppDelegate.swift */,
 				0FB8D3C81DF67E0600FAB630 /* ViewController.swift */,
 				0FB8D3CA1DF67E0600FAB630 /* Main.storyboard */,
@@ -99,6 +115,23 @@
 			path = STWaterfallLayoutExampleUITests;
 			sourceTree = "<group>";
 		};
+		19A45DD7BA29ABBD532D4720 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07307417E8584C18DD20A2B6 /* Pods-STWaterfallLayoutExample.debug.xcconfig */,
+				807684D823DDE78563E16EBD /* Pods-STWaterfallLayoutExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B5B6787788BA9BE881EB9DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADF74649D83B11D3FB916811 /* Pods_STWaterfallLayoutExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FB8D3E01DF67E0600FAB630 /* Build configuration list for PBXNativeTarget "STWaterfallLayoutExample" */;
 			buildPhases = (
+				066DB11853AE13D8F6126C4E /* [CP] Check Pods Manifest.lock */,
 				0FB8D3BF1DF67E0600FAB630 /* Sources */,
 				0FB8D3C01DF67E0600FAB630 /* Frameworks */,
 				0FB8D3C11DF67E0600FAB630 /* Resources */,
+				8967501E4B6DAE49C0B0EF66 /* [CP] Embed Pods Frameworks */,
+				094917E5E9AFF4140F709809 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,8 +216,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FB8D3EF1DF6854B00FAB630 /* QQ.png in Resources */,
 				0FB8D3D11DF67E0600FAB630 /* LaunchScreen.storyboard in Resources */,
 				0FB8D3CE1DF67E0600FAB630 /* Assets.xcassets in Resources */,
+				0FB8D3EE1DF6854B00FAB630 /* 1.plist in Resources */,
 				0FB8D3CC1DF67E0600FAB630 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,13 +233,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		066DB11853AE13D8F6126C4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		094917E5E9AFF4140F709809 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STWaterfallLayoutExample/Pods-STWaterfallLayoutExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8967501E4B6DAE49C0B0EF66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STWaterfallLayoutExample/Pods-STWaterfallLayoutExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0FB8D3BF1DF67E0600FAB630 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FB8D3E71DF67EC300FAB630 /* STWaterfallLayout.swift in Sources */,
+				0FB8D3EB1DF6853A00FAB630 /* TestItem.swift in Sources */,
 				0FB8D3C91DF67E0600FAB630 /* ViewController.swift in Sources */,
+				0FB8D3EA1DF6853A00FAB630 /* TestCell.swift in Sources */,
 				0FB8D3C71DF67E0600FAB630 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +414,7 @@
 		};
 		0FB8D3E11DF67E0600FAB630 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07307417E8584C18DD20A2B6 /* Pods-STWaterfallLayoutExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = STWaterfallLayoutExample/Info.plist;
@@ -339,6 +427,7 @@
 		};
 		0FB8D3E21DF67E0600FAB630 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 807684D823DDE78563E16EBD /* Pods-STWaterfallLayoutExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = STWaterfallLayoutExample/Info.plist;
@@ -392,6 +481,7 @@
 				0FB8D3E21DF67E0600FAB630 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FB8D3E31DF67E0600FAB630 /* Build configuration list for PBXNativeTarget "STWaterfallLayoutExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +490,7 @@
 				0FB8D3E51DF67E0600FAB630 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
