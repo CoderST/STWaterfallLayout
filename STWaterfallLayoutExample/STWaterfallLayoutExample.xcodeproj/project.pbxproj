@@ -404,6 +404,7 @@
 				0F8806C61DF5B324000B671F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F8806C71DF5B324000B671F /* Build configuration list for PBXNativeTarget "STWaterfallLayoutExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +413,7 @@
 				0F8806C91DF5B324000B671F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -31,11 +31,11 @@ public class STWaterfallLayout: UICollectionViewFlowLayout {
     // MARK:- 懒加载
     fileprivate lazy var layoutAttributeArray : [UICollectionViewLayoutAttributes] = [UICollectionViewLayoutAttributes]()
     
-    fileprivate lazy var column : Int = {
+    fileprivate lazy var column : Int = 2
         
-        return self.dataSource?.numberOfCols(self) ?? 2
+//        return self.dataSource?.numberOfCols(self) ?? 2
         
-    }()
+//    }()
     
     
 }
