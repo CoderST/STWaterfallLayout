@@ -23,7 +23,7 @@ public class STWaterfallLayout: UICollectionViewFlowLayout {
     // MARK:- 变量
     private var startIndex : Int = 0
     /// 列数
-    weak var dataSource : STWaterfallLayoutDataSource?
+    public weak var dataSource : STWaterfallLayoutDataSource?
     /// 所有列的高
     private lazy var totleHeightArray : [CGFloat] = Array(count: self.column, repeatedValue: self.sectionInset.top)    /// 记录当前itemCount个数
     private var currentCount = 0
@@ -41,7 +41,7 @@ public class STWaterfallLayout: UICollectionViewFlowLayout {
 
 // MARK:- 初始准备工作
 public extension STWaterfallLayout {
-     override func prepareLayout() {
+     public override func prepareLayout() {
         super.prepareLayout()
         // 获取所有的item 默认只有一部分
         guard let count = collectionView?.numberOfItemsInSection(0) else { return }
@@ -96,7 +96,7 @@ public extension STWaterfallLayout {
 // MARK:- 设置滚动区域
 public extension STWaterfallLayout {
     
-     override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+     public override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         
         return layoutAttributeArray
     }
@@ -105,7 +105,7 @@ public extension STWaterfallLayout {
 // MARK:- 返回所有要显示的item
 public extension STWaterfallLayout {
     
-     override func collectionViewContentSize() -> CGSize {
+     public override func collectionViewContentSize() -> CGSize {
         
         guard let lastItem = layoutAttributeArray.last else { return CGSize.zero }
 
