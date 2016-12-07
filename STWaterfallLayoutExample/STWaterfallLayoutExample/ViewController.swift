@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         
         let layout = STWaterfallLayout()
         layout.dataSource = self
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 30)
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         layout.minimumInteritemSpacing = 10
         layout.minimumLineSpacing = 10
         

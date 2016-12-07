@@ -420,8 +420,9 @@
 				INFOPLIST_FILE = STWaterfallLayoutExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiudou.STWaterfallLayoutExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiudou.xiudouiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a71647a9-a26d-4964-b1f8-11dc204d273f";
 			};
 			name = Debug;
 		};
@@ -433,8 +434,9 @@
 				INFOPLIST_FILE = STWaterfallLayoutExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiudou.STWaterfallLayoutExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiudou.xiudouiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a71647a9-a26d-4964-b1f8-11dc204d273f";
 			};
 			name = Release;
 		};
