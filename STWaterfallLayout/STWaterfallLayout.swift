@@ -22,14 +22,14 @@ public class STWaterfallLayout: UICollectionViewFlowLayout {
     
     // MARK:- 变量
     private var startIndex : Int = 0
-    /// 列数
+    /// 数据源
     public weak var dataSource : STWaterfallLayoutDataSource?
     /// 所有列的高
     private lazy var totleHeightArray : [CGFloat] = Array(count: self.column, repeatedValue: self.sectionInset.top)    /// 记录当前itemCount个数
     private var currentCount = 0
     // MARK:- 懒加载
     private lazy var layoutAttributeArray : [UICollectionViewLayoutAttributes] = [UICollectionViewLayoutAttributes]()
-    
+    /// 列数
     private var column : Int {
         
         return self.dataSource?.numberOfCols(self) ?? 2
