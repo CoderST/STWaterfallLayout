@@ -4,20 +4,20 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - STWaterfallLayout (0.0.2)
+  - STWaterfallLayout (0.0.3)
 
 DEPENDENCIES:
   - MJExtension
   - MJRefresh
   - SDWebImage
-  - STWaterfallLayout (~> 0.0.2)
+  - STWaterfallLayout (~> 0.0.3)
 
 SPEC CHECKSUMS:
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  STWaterfallLayout: 1e867b6ae3e703b4e7cd68389710184ac0faeff1
+  STWaterfallLayout: 74847afa38f08ad25969eefc14b9b9b7475b7b1b
 
-PODFILE CHECKSUM: 05591b789d102797f17e8d915157fc4973c9964a
+PODFILE CHECKSUM: 259b45fa28f55aa8703fe92157f75373a65b9a08
 
 COCOAPODS: 1.1.1

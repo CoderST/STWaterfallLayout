@@ -13,14 +13,5 @@ class TestItem: NSObject {
     var h : CGFloat = 0
     var w : CGFloat = 0
     var img : String = ""
-//    init(dict : [String : AnyObject]) {
-//        super.init()
-//        
-//        setValuesForKeysWithDictionary(dict)
-//    }
-//    
-//    override func setValue(value: AnyObject?, forUndefinedKey key: String) {
-//        
-//    }
     
 }

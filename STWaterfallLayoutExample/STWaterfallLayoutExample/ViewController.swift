@@ -10,6 +10,9 @@ import UIKit
 import MJRefresh
 import MJExtension
 import STWaterfallLayout
+
+private let collectionViewCellIdentifier = "collectionViewCellIdentifier"
+
 class ViewController: UIViewController {
     
     lazy var dataArray : [TestItem] = [TestItem]()
@@ -17,15 +20,16 @@ class ViewController: UIViewController {
     lazy var collectionView : UICollectionView = {
         
         let layout = STWaterfallLayout()
-//        layout.dataSource = self
+        layout.dataSource = self
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 30)
         layout.minimumInteritemSpacing = 10
         layout.minimumLineSpacing = 10
         
         
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
+        collectionView.backgroundColor = UIColor.whiteColor()
         collectionView.dataSource = self
-        collectionView.registerClass(TestCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.registerClass(TestCell.self, forCellWithReuseIdentifier: collectionViewCellIdentifier)
         
         return collectionView
     }()
@@ -39,12 +43,8 @@ class ViewController: UIViewController {
             dataArray.append(item as! TestItem)
         }
         
-        // [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshAction)];
-        
-        
-//        collectionView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(ViewController.headRefreshing))
-//        collectionView.mj_footer = MJRefreshBackFooter(refreshingTarget: self, refreshingAction: #selector(ViewController.loadMoreData))
-//        collectionView.
+        collectionView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "headRefreshing")
+        collectionView.mj_footer = MJRefreshBackFooter(refreshingTarget: self, refreshingAction: "loadMoreData")
         view.addSubview(collectionView)
         
     }
@@ -79,12 +79,13 @@ class ViewController: UIViewController {
 extension ViewController : UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         return dataArray.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell{
 
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! TestCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(collectionViewCellIdentifier, forIndexPath: indexPath) as! TestCell
         cell.backgroundColor = UIColor.redColor()
         cell.testModel = dataArray[indexPath.item]
         return cell
@@ -101,7 +102,6 @@ extension ViewController : STWaterfallLayoutDataSource {
     func heightOfItem(stWaterfallLayout: STWaterfallLayout, indexPath: NSIndexPath, itemWidth: CGFloat) -> CGFloat {
         
         let item = dataArray[indexPath.item]
-        
         let h = item.h * itemWidth / item.w
         
         return h
