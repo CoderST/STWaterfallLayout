@@ -9,7 +9,7 @@
 import UIKit
 import MJRefresh
 import MJExtension
-import STWaterfallLayout
+//import STWaterfallLayout
 
 private let collectionViewCellIdentifier = "collectionViewCellIdentifier"
 
@@ -21,9 +21,9 @@ class ViewController: UIViewController {
         
         let layout = STWaterfallLayout()
         layout.dataSource = self
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 20, right: 10)
         layout.minimumInteritemSpacing = 10
-        layout.minimumLineSpacing = 10
+        layout.minimumLineSpacing = 30
         
         
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)

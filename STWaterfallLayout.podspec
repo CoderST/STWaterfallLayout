@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name         = "STWaterfallLayout"
-s.version      = "0.0.4"
+s.version      = "0.0.5"
 s.summary      = "swift版本瀑布流."
 s.ios.deployment_target = '8.0'
 s.homepage     = "https://github.com/CoderST/STWaterfallLayout"

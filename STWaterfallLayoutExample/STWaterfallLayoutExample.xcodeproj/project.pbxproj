@@ -17,6 +17,7 @@
 		0FB8D3EB1DF6853A00FAB630 /* TestItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8D3E91DF6853A00FAB630 /* TestItem.swift */; };
 		0FB8D3EE1DF6854B00FAB630 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FB8D3EC1DF6854B00FAB630 /* 1.plist */; };
 		0FB8D3EF1DF6854B00FAB630 /* QQ.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FB8D3ED1DF6854B00FAB630 /* QQ.png */; };
+		0FE897DF1DF98A4500C2939B /* STWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE897DE1DF98A4500C2939B /* STWaterfallLayout.swift */; };
 		D053D9F8D3AC5BF48A219CBC /* Pods_STWaterfallLayoutExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADF74649D83B11D3FB916811 /* Pods_STWaterfallLayoutExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		0FB8D3E91DF6853A00FAB630 /* TestItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestItem.swift; sourceTree = "<group>"; };
 		0FB8D3EC1DF6854B00FAB630 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
 		0FB8D3ED1DF6854B00FAB630 /* QQ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QQ.png; sourceTree = "<group>"; };
+		0FE897DE1DF98A4500C2939B /* STWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STWaterfallLayout.swift; sourceTree = "<group>"; };
 		807684D823DDE78563E16EBD /* Pods-STWaterfallLayoutExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STWaterfallLayoutExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-STWaterfallLayoutExample/Pods-STWaterfallLayoutExample.release.xcconfig"; sourceTree = "<group>"; };
 		ADF74649D83B11D3FB916811 /* Pods_STWaterfallLayoutExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STWaterfallLayoutExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 		0FB8D3C51DF67E0600FAB630 /* STWaterfallLayoutExample */ = {
 			isa = PBXGroup;
 			children = (
+				0FE897DE1DF98A4500C2939B /* STWaterfallLayout.swift */,
 				0FB8D3EC1DF6854B00FAB630 /* 1.plist */,
 				0FB8D3ED1DF6854B00FAB630 /* QQ.png */,
 				0FB8D3E81DF6853A00FAB630 /* TestCell.swift */,
@@ -288,6 +291,7 @@
 			files = (
 				0FB8D3EB1DF6853A00FAB630 /* TestItem.swift in Sources */,
 				0FB8D3C91DF67E0600FAB630 /* ViewController.swift in Sources */,
+				0FE897DF1DF98A4500C2939B /* STWaterfallLayout.swift in Sources */,
 				0FB8D3EA1DF6853A00FAB630 /* TestCell.swift in Sources */,
 				0FB8D3C71DF67E0600FAB630 /* AppDelegate.swift in Sources */,
 			);

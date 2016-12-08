@@ -24,12 +24,14 @@ public class STWaterfallLayout: UICollectionViewFlowLayout {
     private var startIndex : Int = 0
     /// 数据源
     public weak var dataSource : STWaterfallLayoutDataSource?
+    /// 最高
+    private var maxHeight : CGFloat = 0
     /// 所有列的高
     private lazy var totleHeightArray : [CGFloat] = Array(count: self.column, repeatedValue: self.sectionInset.top)    /// 记录当前itemCount个数
     private var currentCount = 0
     // MARK:- 懒加载
     private lazy var layoutAttributeArray : [UICollectionViewLayoutAttributes] = [UICollectionViewLayoutAttributes]()
-    /// 列数
+    
     private var column : Int {
         
         return self.dataSource?.numberOfCols(self) ?? 2
@@ -88,6 +90,13 @@ public extension STWaterfallLayout {
             
             
         }
+        
+        // 记录最高值
+        if let maxH = totleHeightArray.maxElement(){
+            
+            maxHeight = maxH
+        }
+        
         // 记录开始的index
         startIndex = count
     }
@@ -106,10 +115,8 @@ public extension STWaterfallLayout {
 public extension STWaterfallLayout {
     
      public override func collectionViewContentSize() -> CGSize {
-        
-        guard let lastItem = layoutAttributeArray.last else { return CGSize.zero }
 
-        return CGSize(width: 0, height: lastItem.frame.maxY + sectionInset.bottom)
+        return CGSize(width: 0, height: maxHeight + sectionInset.bottom - minimumLineSpacing)
     }
 
 }
