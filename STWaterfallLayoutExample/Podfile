@@ -8,4 +8,5 @@ target 'STWaterfallLayoutExample' do
 pod 'SDWebImage'
 pod 'MJExtension'
 pod 'MJRefresh'
+pod 'STWaterfallLayout', '~> 0.0.5'
 end

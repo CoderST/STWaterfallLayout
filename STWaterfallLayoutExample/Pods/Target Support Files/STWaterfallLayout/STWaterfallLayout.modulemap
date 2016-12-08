@@ -1,0 +1,6 @@
+framework module STWaterfallLayout {
+  umbrella header "STWaterfallLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

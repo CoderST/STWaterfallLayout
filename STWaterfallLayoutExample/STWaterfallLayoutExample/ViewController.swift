@@ -9,7 +9,7 @@
 import UIKit
 import MJRefresh
 import MJExtension
-//import STWaterfallLayout
+import STWaterfallLayout
 
 private let collectionViewCellIdentifier = "collectionViewCellIdentifier"
 
